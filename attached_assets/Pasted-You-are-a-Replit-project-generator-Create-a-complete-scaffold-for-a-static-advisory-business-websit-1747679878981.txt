@@ -1,0 +1,117 @@
+You are a Replit project generator. Create a complete scaffold for a static advisory‐business website for RST Associates, using HTML5, CSS3, JavaScript, and Bootstrap 5. Don’t write any backend code—focus on structure, responsiveness, and placeholders. The user will fill in real content later.
+
+Requirements:
+
+Project Structure
+
+/index.html
+
+/css/style.css
+
+/js/app.js
+
+/assets/logo.png (place the attached RST logo here)
+
+Global Assets & Styling
+
+Load Bootstrap 5 (CSS + JS bundle) via CDN
+
+Load Google Fonts of your choice for headings + body
+
+Use FontAwesome for any icons
+
+Primary brand color: midnight blue
+
+Add comments in style.css for where to override colors, typography, and spacing
+
+index.html Template
+
+<head> with meta tags for responsive design, page title placeholder, favicon placeholder
+
+Hero Section at top:
+
+Left: logo (/assets/logo.png)
+
+Right: Headline placeholder (e.g. “Expert Treasury Risk Advisory for Banks”)
+
+Sub‐headline / elevator pitch placeholder
+
+Three CTA buttons:
+
+Subscribe (Newsletter) – triggers email‐capture form
+
+Subscribe (LinkedIn Blog) – links to LinkedIn newsletter URL
+
+Get in Touch – opens a contact form modal
+
+Summary of Services (one horizontal row of four Bootstrap cards):
+
+Peer Benchmarking
+
+Regulatory Remediation
+
+Strategic Enhancements
+
+Documentation Enhancements
+
+Each card: icon placeholder, title, 1–2 line description placeholder
+
+Projects Carousel:
+
+Bootstrap carousel containing up to 8 cards
+
+Each card:
+
+Project Title placeholder
+
+Project Subtitle placeholder
+
+Body text placeholder (“Challenge / Solution / Outcome”)
+
+Newsletter & Blog Section
+
+Email Subscription Form with "Email address" input + “Subscribe” button
+
+Form action can be a # placeholder or /subscribe endpoint
+
+Include form validation by default (HTML5)
+
+LinkedIn Blog Button: large button linking to your LinkedIn newsletter URL
+
+Optionally include <iframe> or embed placeholder for future LinkedIn widget
+
+Contact Form Modal (triggered by “Get in Touch”):
+
+Fields: Name, Email, Message
+
+Submit button that sends to info@rstassociates.co (mailto: link or placeholder POST)
+
+Clear labels and placeholder attributes
+
+Footer
+
+Social icon links (LinkedIn, email)
+
+Copyright notice
+
+JavaScript (app.js)
+
+Initialize Bootstrap components (e.g. carousel, modal)
+
+Placeholder for form‐submission handlers (comments only)
+
+Notes & Comments
+
+Everywhere there is real copy or images needed, insert HTML comments like <!-- TODO: Replace with actual headline -->
+
+Make sure all sections are mobile‐first and fully responsive
+
+Include comments in HTML pointing out “where to inject widget code” for calendar or other embeds
+
+Deployment
+
+Ready to push to GitHub for hosting on GitHub Pages
+
+No server requirements—purely static
+
+Do not write any business logic or backend. Focus solely on the static scaffold, folder structure, CDN includes, and clear placeholder annotations so that the user can immediately start customizing.
