@@ -1,0 +1,295 @@
+/*
+* RST Associates - Custom Styles
+* 
+* This file contains all custom styling for the RST Associates website.
+* It builds on Bootstrap 5's default styles with custom overrides.
+*/
+
+/* 
+* COLOR VARIABLES
+* Primary brand color: midnight blue
+* Feel free to modify these variables to change the color scheme
+*/
+:root {
+    --primary-color: #191970; /* Midnight Blue */
+    --primary-light: #2a2a8f;
+    --primary-dark: #0f0f4b;
+    --secondary-color: #6c757d;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+    --text-color: #333333;
+    --text-light: #6c757d;
+    --accent-color: #ffc107;
+}
+
+/* 
+* TYPOGRAPHY SETTINGS
+* Font families are imported from Google Fonts in the HTML head
+* Montserrat for headings, Open Sans for body text
+*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6, .nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+/* 
+* SPACING UTILITIES
+* Bootstrap provides utility classes for margins and padding
+* Add custom spacing here if needed
+*/
+
+/*
+* NAVBAR STYLING
+*/
+.navbar {
+    background-color: var(--primary-color);
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #ffffff;
+}
+
+/*
+* HERO SECTION
+*/
+#hero {
+    padding: 6rem 0;
+    background-color: #f8f9fa;
+    position: relative;
+}
+
+#hero h1 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+#hero .lead {
+    color: var(--text-light);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: var(--primary-light);
+    border-color: var(--primary-light);
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+/*
+* SERVICES SECTION
+*/
+.service-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.service-card .card-title {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+/*
+* PROJECTS CAROUSEL
+*/
+#projects {
+    background-color: white;
+}
+
+.project-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.project-card .card-title {
+    color: var(--primary-color);
+    font-size: 1.6rem;
+}
+
+.project-card .card-subtitle {
+    color: var(--text-light);
+    font-style: italic;
+}
+
+.project-content h6 {
+    color: var(--primary-color);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    opacity: 0.7;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    padding: 1.5rem;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: var(--primary-color);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 6px;
+}
+
+/*
+* NEWSLETTER SECTION
+*/
+.newsletter-form .form-control {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 1px solid #ced4da;
+}
+
+.newsletter-form .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.placeholder-box {
+    border: 2px dashed #dee2e6;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.linkedin-embed i {
+    color: #0077b5;
+}
+
+/*
+* FOOTER
+*/
+footer {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.8rem;
+}
+
+.social-link {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.social-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+/*
+* MODAL STYLING
+*/
+.modal-content {
+    border-radius: 10px;
+    border: none;
+}
+
+.modal-header {
+    background-color: var(--primary-color);
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: none;
+}
+
+.modal-header .btn-close {
+    color: white;
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+/*
+* RESPONSIVE ADJUSTMENTS
+* Bootstrap is mobile-first, but we can add custom adjustments here
+*/
+@media (max-width: 767px) {
+    #hero {
+        padding: 3rem 0;
+        text-align: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    
+    .project-card {
+        margin: 0 1rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #hero {
+        padding: 4rem 0;
+    }
+}

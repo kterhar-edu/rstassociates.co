@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="80" viewBox="0 0 200 80">
+  <style>
+    .rst-text {
+      font-family: 'Arial', sans-serif;
+      font-weight: bold;
+      fill: #191970; /* Midnight Blue */
+    }
+    .associates-text {
+      font-family: 'Arial', sans-serif;
+      font-weight: normal;
+      fill: #191970; /* Midnight Blue */
+    }
+    .line {
+      stroke: #191970; /* Midnight Blue */
+      stroke-width: 2;
+    }
+  </style>
+  
+  <!-- RST Letters -->
+  <text x="10" y="45" class="rst-text" font-size="36">RST</text>
+  
+  <!-- Line Separator -->
+  <line x1="95" y1="20" x2="95" y2="60" class="line" />
+  
+  <!-- Associates Text -->
+  <text x="105" y="45" class="associates-text" font-size="24">Associates</text>
+</svg>
